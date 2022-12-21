@@ -52,7 +52,7 @@ export default function Footer() {
               <a
                 href="https://twitter.com/web3templates"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 <span className="sr-only">Twitter</span>
                 <Twitter />
@@ -60,7 +60,7 @@ export default function Footer() {
               <a
                 href="https://facebook.com/web3templates"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 <span className="sr-only">Facebook</span>
                 <Facebook />
@@ -68,12 +68,12 @@ export default function Footer() {
               <a
                 href="https://instagram.com/web3templates"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener">
+              <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
                 <span className="sr-only">Linkedin</span>
                 <Linkedin />
               </a>
@@ -141,7 +141,7 @@ const Backlink = () => {
     <a
       href="https://web3templates.com"
       target="_blank"
-      rel="noopener"
+      rel="noreferrer"
       className="absolute flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center left-5 bottom-5 dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300"
     >
       <svg

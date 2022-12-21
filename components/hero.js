@@ -16,7 +16,7 @@ export default function Hero() {
             <a
               href="https://google.de"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
               className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
             >
               Try for free
