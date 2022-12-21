@@ -3,7 +3,7 @@ import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 
 export default function Navbar() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = ["Features", "Pricing"];
 
   return (
     <div className="w-full">
@@ -15,7 +15,7 @@ export default function Navbar() {
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
                   <div className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                    <span>onelinepage</span>
+                    <span>OneLine 💡</span>
                   </div>
                 </Link>
 
@@ -48,8 +48,8 @@ export default function Navbar() {
                   <>
                     {navigation.map((item, index) => (
                       <Link key={index} href="/">
-                        <div className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
-                          {item}
+                        <div className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100  focus:outline-none dark:focus:bg-trueGray-700">
+                          {item}hel
                         </div>
                       </Link>
                     ))}

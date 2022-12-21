@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Hero from "../components/hero";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import PopupWidget from "../components/popupWidget";
+import Hero from "../src/components/hero";
+import Navbar from "../src/components/navbar";
+import Footer from "../src/components/footer";
+import PopupWidget from "../src/components/popupWidget";
 
 export default function Home() {
   return (
