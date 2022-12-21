@@ -1,6 +1,22 @@
+import dynamic from "next/dynamic";
+import { useState, useRef } from "react";
 import Container from "./container";
 
+const PointConfetti = dynamic(() => import("./pointConfetti"), {
+  ssr: false,
+});
+
 export default function Hero() {
+  const [trigger, setTrigger] = useState(false);
+  const [hover, setHover] = useState(false);
+
+  const buttonRef = useRef();
+
+  const handleHover = () => {
+    setTrigger(true);
+    setHover(true);
+  };
+
   return (
     <>
       <Container className="flex justify-center ">
@@ -11,8 +27,9 @@ export default function Hero() {
               It takes one sentence.
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 text-center pb-20">
-              Create full launch-ready landing pages from your idea. All you need is a short description of your need.
-              Made for builders, marketers and agencies.
+              Create full launch-ready landing pages from your idea. All you
+              need is a short description of your need. Made for builders,
+              marketers and agencies.
             </p>
 
             <a
@@ -20,10 +37,19 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer"
               className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
+              onMouseEnter={() => handleHover(true)}
+              onMouseLeave={() => setHover(false)}
+              ref={buttonRef}
             >
               Start trial
             </a>
           </div>
+          <PointConfetti
+            trigger={trigger}
+            hover={hover}
+            setTrigger={setTrigger}
+            buttonRef={buttonRef}
+          />
         </div>
       </Container>
     </>
