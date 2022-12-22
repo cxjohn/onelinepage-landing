@@ -33,7 +33,7 @@ export default function Hero() {
             </p>
 
             <a
-              href="https://google.de"
+              href="https://twitter.com/lennardeth/status/1605296091800276993?s=20&t=AWXtdNStbdBHZBlyFVFFSg"
               target="_blank"
               rel="noreferrer"
               className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
@@ -41,7 +41,7 @@ export default function Hero() {
               onMouseLeave={() => setHover(false)}
               ref={buttonRef}
             >
-              Start trial
+              Get started
             </a>
           </div>
           <PointConfetti
@@ -49,6 +49,7 @@ export default function Hero() {
             hover={hover}
             setTrigger={setTrigger}
             buttonRef={buttonRef}
+            tweenDuration={100}
           />
         </div>
       </Container>
